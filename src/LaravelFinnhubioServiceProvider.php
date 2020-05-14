@@ -11,36 +11,10 @@ class LaravelFinnhubioServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /*
-         * Optional methods to load your package assets
-         */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravel-finnhubio');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-finnhubio');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-finnhubio.php'),
+                __DIR__.'/../config/config.php' => config_path('finnhubio.php'),
             ], 'config');
-
-            // Publishing the views.
-            /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-finnhubio'),
-            ], 'views');*/
-
-            // Publishing assets.
-            /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/laravel-finnhubio'),
-            ], 'assets');*/
-
-            // Publishing the translation files.
-            /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravel-finnhubio'),
-            ], 'lang');*/
-
-            // Registering package commands.
-            // $this->commands([]);
         }
     }
 
@@ -50,11 +24,11 @@ class LaravelFinnhubioServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-finnhubio');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'finnhubio');
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravel-finnhubio', function () {
-            return new LaravelFinnhubio;
+        $this->app->singleton('finnhubio', function () {
+            return new Finnhubio;
         });
     }
 }

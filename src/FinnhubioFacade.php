@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Davidgrzyb\LaravelFinnhubio\Skeleton\SkeletonClass
  */
-class LaravelFinnhubioFacade extends Facade
+class FinnhubioFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class LaravelFinnhubioFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-finnhubio';
+        return 'finnhubio';
     }
 }
