@@ -53,6 +53,7 @@ class Forex extends Api
             'resolution' => $resolution,
             'from' => optional($from)->timestamp,
             'to' => optional($to)->timestamp,
+            'count' => !$from || !$to,
         ]);
     }
 

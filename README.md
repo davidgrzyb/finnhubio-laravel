@@ -23,11 +23,11 @@ composer require davidgrzyb/laravel-finnhubio
 // Quote endpoint:
 Finnhubio::stock()->getQuote('AAPL');
 // Candles endpoint:
-Finnhubio::stock()->getCandles('AAPL', 'D', now()->subDays(2), now(), 'json', false);
+Finnhubio::stock()->getCandles('AAPL', '1', now()->subDay(1), now());
 // Dividends endpoint:
-Finnhubio::stock()->getDividends('AAPL', now()->subYear(1), now());
+Finnhubio::stock()->getDividends('AAPL', now()->subMonth(10), now());
 // Splits endpoint:
-Finnhubio::stock()->getSplits('AAPL', );
+Finnhubio::stock()->getSplits('AAPL', now()->subYear(10), now());
 ```
 
 ### Forex
@@ -38,7 +38,7 @@ Finnhubio::forex()->getExchanges();
 // Symbols endpoint:
 Finnhubio::forex()->getSymbols('oanda');
 // Candles endpoint:
-Finnhubio::forex()->getCandles('AAPL', 'D', now()->subDays(1), now(), 'json');
+Finnhubio::forex()->getCandles('OANDA:EUR_USD', 'D', now()->subDays(1), now());
 // All rates endpoint:
 Finnhubio::forex()->getRates();
 ```
@@ -51,7 +51,7 @@ Finnhubio::crypto()->getExchanges();
 // Symbols endpoint:
 Finnhubio::crypto()->getSymbols('binance');
 // Candles endpoint:
-Finnhubio::crypto()->getCandles('AAPL');
+Finnhubio::crypto()->getCandles('BINANCE:BTCUSDT', 'D', now()->subDays(1), now());
 ```
 
 <!-- ### Testing

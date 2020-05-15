@@ -45,6 +45,7 @@ class StockPrice extends Api
             'from' => optional($from)->timestamp,
             'to' => optional($to)->timestamp,
             'adjusted' => $adjusted,
+            'count' => !$from || !$to,
         ]);
     }
 
