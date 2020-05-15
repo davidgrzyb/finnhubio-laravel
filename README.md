@@ -1,11 +1,11 @@
 # A Simple Finnhub.io Package for Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://packagist.org/packages/davidgrzyb/laravel-finnhubio)
-[![Build Status](https://img.shields.io/travis/davidgrzyb/laravel-finnhubio/master.svg?style=flat-square)](https://travis-ci.org/davidgrzyb/laravel-finnhubio)
-[![Quality Score](https://img.shields.io/scrutinizer/g/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://scrutinizer-ci.com/g/davidgrzyb/laravel-finnhubio)
-[![Total Downloads](https://img.shields.io/packagist/dt/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://packagist.org/packages/davidgrzyb/laravel-finnhubio)
+<!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://packagist.org/packages/davidgrzyb/laravel-finnhubio) -->
+<!-- [![Build Status](https://img.shields.io/travis/davidgrzyb/laravel-finnhubio/master.svg?style=flat-square)](https://travis-ci.org/davidgrzyb/laravel-finnhubio) -->
+<!-- [![Quality Score](https://img.shields.io/scrutinizer/g/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://scrutinizer-ci.com/g/davidgrzyb/laravel-finnhubio) -->
+<!-- [![Total Downloads](https://img.shields.io/packagist/dt/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://packagist.org/packages/davidgrzyb/laravel-finnhubio) -->
 
-This Laravel package simplifies the usage of Finnhub.io's API for getting stock, forex and crypto data. Currently only the Stock Price, Forex and Crypto endpoints are supported.
+This Laravel package simplifies the usage of Finnhub.io's API for getting stock, forex and crypto data. Currently only the Stock Price, Forex and Crypto endpoints are supported. <!--Read more about this package <a href="https://davidgrzyb.com/how-to-use-finnhubio-api-with-laravel">on my blog.</a>-->
 
 ## Installation
 
@@ -14,6 +14,8 @@ You can install the package via composer:
 ```bash
 composer require davidgrzyb/laravel-finnhubio
 ```
+
+You will need to add an API key for Finnhub in your `.env` file with the key `FINNHUB_API_KEY`. Get your API key [here](https://finnhub.io/dashboard).
 
 ## Usage
 
