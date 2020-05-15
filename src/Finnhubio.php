@@ -3,10 +3,10 @@
 namespace Davidgrzyb\LaravelFinnhubio;
 
 use GuzzleHttp\Client;
-use Davidgrzyb\LaravelFinnhubio\Finnhubio\Api;
-use Davidgrzyb\LaravelFinnhubio\Finnhubio\Forex;
-use Davidgrzyb\LaravelFinnhubio\Finnhubio\Crypto;
-use Davidgrzyb\LaravelFinnhubio\Finnhubio\StockPrice;
+use Davidgrzyb\LaravelFinnhubio\Api\Api;
+use Davidgrzyb\LaravelFinnhubio\Api\Forex;
+use Davidgrzyb\LaravelFinnhubio\Api\Crypto;
+use Davidgrzyb\LaravelFinnhubio\Api\StockPrice;
 
 class Finnhubio
 {

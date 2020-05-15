@@ -4,9 +4,6 @@ namespace Davidgrzyb\LaravelFinnhubio;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Davidgrzyb\LaravelFinnhubio\Skeleton\SkeletonClass
- */
 class FinnhubioFacade extends Facade
 {
     /**
