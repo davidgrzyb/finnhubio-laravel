@@ -5,7 +5,7 @@
 <!-- [![Quality Score](https://img.shields.io/scrutinizer/g/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://scrutinizer-ci.com/g/davidgrzyb/laravel-finnhubio) -->
 <!-- [![Total Downloads](https://img.shields.io/packagist/dt/davidgrzyb/laravel-finnhubio.svg?style=flat-square)](https://packagist.org/packages/davidgrzyb/laravel-finnhubio) -->
 
-This Laravel package simplifies the usage of Finnhub.io's API for getting stock, forex and crypto data. Currently only the Stock Price, Forex and Crypto endpoints are supported. <!--Read more about this package <a href="https://davidgrzyb.com/how-to-use-finnhubio-api-with-laravel">on my blog.</a>-->
+This Laravel package simplifies the usage of Finnhub.io's API for getting stock, forex and crypto data. Currently only the Stock Price, Forex and Crypto endpoints are supported. Read more about this package <a href="https://davidgrzyb.com/how-to-use-finnhubio-api-with-laravel">on my blog.</a>
 
 ## Installation
 
